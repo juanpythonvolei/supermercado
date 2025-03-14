@@ -32,4 +32,4 @@ def apagar_usuario(email:str):
         return {'status':'erro'}
 
     
-app.run(debug=True)
+app.run(host='0.0.0.0', port=5000)
