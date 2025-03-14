@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import os
 # Criar um engine para o banco de dados
-engine = create_engine(f'sqlite:///models/dados.db',echo=True)
+engine = create_engine(f'{os.getenv('database_url')}',echo=True)
 
 # Definir a classe base do modelo
 Base = declarative_base()
