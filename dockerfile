@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Exponha a porta em que o Flask irá rodar (por exemplo, 5000)
-EXPOSE 8080
+EXPOSE 5000
 
 # Defina o comando para rodar a aplicação
 CMD ["python", "app.py"]
